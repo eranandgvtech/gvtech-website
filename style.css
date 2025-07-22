@@ -1,0 +1,527 @@
+html,
+body {
+  font-size: 15px;
+  color: #454545;
+  font-family: 'Poppins', sans-serif;
+  vertical-align: baseline;
+  line-height: 1.7;
+  font-weight: 400;
+  overflow-x: hidden;
+  
+ 
+ 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  margin: 0 0 26px;
+  line-height: 1.8;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Poppins', sans-serif;
+  color:white;
+  margin: 0 0 26px;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 52px;
+  line-height: 62px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 50px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 42px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 26px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+a {
+  color: #bb0b0b;
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+a:active,a:hover {
+  text-decoration: none;
+  outline: 0 none;
+  color: #bb0b0b;
+}
+
+ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+ /* ----------------header---------------- */
+
+ .full-width {
+  position: relative;
+  background-image: url("https://www.gvtechsolution.com/assets/images/banner/style1/main-banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+ 
+ }
+ 
+ .full-width .contact-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  /* background-color: #a69f9f; */
+  border-bottom: 1px solid wheat;
+ }
+
+ .full-width .contact-info ul {
+  display: flex;
+  justify-content: center;  /* or space-between / flex-start as needed */
+  align-items: center;
+  gap: 40px;                /* Optional: add spacing between items */
+}
+
+
+ .full-width .contact-info li{
+   display: inline-block;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  border-right: 1px solid wheat;
+  margin-right: 40px;
+  padding-right: 20px;
+ }
+
+ .full-width .contact-info li i{
+  margin-right: 10px;
+ }
+ 
+ 
+
+ .full-width .contact-info li a{
+  color: white;
+  font-size: 16px;
+ }
+
+ .full-width .contact-info li a:hover{
+ color:red;
+ }
+
+ .full-width .logo-area {
+  display: flex;                  /* Make logo and nav horizontal */
+  align-items: center;           /* Vertically center the items */
+  justify-content: space-between; /* Optional: space between logo and nav */
+  padding: 20px 40px;            /* Add some spacing */
+}
+
+
+ .full-width .logo-area a .normal-logo{
+  height: auto;
+  max-width: 170px;
+  margin-left: 150px;
+ }
+
+ .full-width .logo-area a .normal-logo img{
+  margin-right: 10px;
+  width: 100%;
+  height: auto;
+ }
+
+ /* ------------navbar---------------- */
+
+.full-width .logo-area .navbar .nav-menu li {
+  display: inline-block;
+  margin-right: 32px;
+  padding: 0;
+}
+
+.full-width .logo-area .navbar .nav-menu li a {
+
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 10px;
+  height: 95px;
+  line-height: 95px;
+  padding: 0;
+  color: #ffffff;
+  font-family: Poppins;
+}
+
+.full-width .logo-area .navbar .nav-menu li a:hover {
+  color: #bb0b0b;
+}
+
+.full-width .logo-area .navbar .nav-menu li a:after {
+  content: '';
+  
+  width: 100%;
+  height: 2px;
+  background-color: #bb0b0b;
+  bottom: -2px;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+/* --------------home---------------- */
+
+.full-width .home {
+  padding: 100px 60px;
+  text-align: center;
+ 
+}
+
+.full-width .home .sub-title {
+  color: #ffffff;
+  margin: 0px 0px 10px 0px;
+  padding: 0px 20px;
+
+}
+
+.full-width .home .btn {
+  display: inline-block;
+  background-color: #bb0b0b;
+  color: #ffffff;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.full-width .home .btn:hover {
+  background-color: #ffffff;
+  color: #bb0b0b;
+  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.75);
+}
+.full-width .home .btn:active {
+  transform: scale(0.95);
+}
+.full-width .home .btn:focus {
+  outline: none;
+  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.75);
+}
+.full-width .home .btn:focus-visible {
+  outline: 2px solid #bb0b0b;  
+  outline-offset: 2px;
+}
+
+
+/* -----------about---------------- */
+
+.about {
+  padding: 100px 60px;
+  /* background-color: #f4f4f4; */
+  background: url("https://www.gvtechsolution.com/assets/images/bg/about-bg.png") no-repeat center center;
+  background-position: top-center;
+  margin-top: 60px;
+  background-size: cover;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.about .container {
+  display: flex;
+  padding: 0 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+
+
+.about .container .image-part img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  border-top-right-radius: 40px;
+ border-bottom-right-radius: 40px;
+ overflow: hidden;
+}
+
+.about .container .sec-title {
+  max-width: 600px;
+  margin-left: 40px;
+}
+.about .container .sec-title .title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  color: #0a0a0a;
+  margin-bottom: 0;
+  padding-top: 28px;
+  position: relative;
+}
+.about .container .sec-title .sub-text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #191821;
+  text-transform: capitalize;
+  display: block;
+  margin: 0 0 10px;
+}
+.about .container .sec-title p {
+ display: block;
+ margin: 0;
+  line-height: 1.8;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 18px;
+  color:black;
+  margin-bottom: 30px;
+}
+.about .container .sec-title .btn-part {
+  display: flex;
+  margin-top: 30px;
+  gap: 20px; /* Space between buttons */
+}
+.about .container .sec-title .btn-part .readon {
+  background-color: #bb0b0b;
+  color: #ffffff;  
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.about .container .sec-title .btn-part .readon:hover {
+  background-color: #ffffff;
+  color: #bb0b0b;
+  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.75);
+} 
+.about .container .sec-title .btn-part .readon:active {
+  transform: scale(0.95);
+}
+.about .container .sec-title .btn-part .readon:focus {
+  outline: none;
+  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.75);
+}
+.about .container .sec-title .btn-part .readon:focus-visible {
+  outline: 2px solid #bb0b0b;  
+  outline-offset: 2px;
+}
+
+
+/* ------------services----------------  */
+
+.services {
+  padding: 100px 100px;
+  background: url("https://www.gvtechsolution.com/assets/images/bg/ser-bg.png") no-repeat center center;
+  background-size: cover;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+}
+
+.services .title { 
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services .title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  color: white;
+  margin: 0;
+  padding-top: 28px;
+}
+
+.services .title .btn{
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 800px;
+  background-color: #bb0b0b;
+  color: #ffffff;  
+  padding: 12px 30px;
+  font-size: 17px;
+  line-height: 26px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+} 
+.services .title .btn:hover {
+  background-color: #ffffff;
+  color: #bb0b0b;
+  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.75);
+}
+.services .title .btn:active {
+  transform: scale(0.95);
+}
+.services .title .btn:focus {
+  outline: none;
+  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.75);
+}
+.services .title .btn:focus-visible {
+  outline: 2px solid #bb0b0b;  
+  outline-offset: 2px;
+} 
+
+
+.services .discription{
+ color: #f5f5f5;;
+  font-size: 16px;
+  line-height: 1.8;
+  margin:0 0 26px;
+  margin-top: 50px;
+}
+
+.services .all-services{
+ --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+    box-sizing: border-box;
+}
+.services .all-services .service-items {
+  flex: 0 0 auto;
+  width: 33.333333%;
+  margin-bottom: 55px;
+  padding: 0 calc(var(--bs-gutter-x) * .5);
+  box-sizing: border-box;
+}
+
+.services .all-services .service-items .item{
+ display: flex;
+ box-sizing: border-box;
+}
+
+.services .all-services .service-items .item .icon {
+ vertical-align: middle;
+ box-sizing: border-box;
+ overflow-clip-margin: content-box;
+ overflow: clip;
+}
+
+.services .all-services .service-items .item .icon img{
+  width: 70px;
+  height: 70px;
+  max-width: unset;
+}
+
+.services .all-services .service-items .item .text {
+ padding: 0px 0px 0px 25px;
+}
+
+.services .all-services .service-items .item .text .title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 13px;
+}
+
+.services .all-services .service-items .item .text .title a{
+ color: #ffffff;
+}
+
+.services .all-services .service-items .item .text .title a:hover{
+ color: #bb0b0b;
+}
+
+.services .all-services .service-items .item .text .services-txt{
+  color: white;
+  margin: 0;
+}
+
+
+/* -----------footer----------------  */
+
+.footer-content {
+  background-color: #191821;
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+.footer-content p {
+  margin: 0;
+  font-size: 14px;
+}
+.footer-content a {
+  color: #bb0b0b;
+  text-decoration: none;
+}
+.footer-content a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.footer-content .social-icons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.footer-content .social-icons a {
+  color: #ffffff;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+.footer-content .social-icons a:hover {
+  color: #bb0b0b;
+}  
+
+.footer-bottom{
+  background-color: #191821;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center; 
+}
+.full-width .home .sub-title {
+  color: #ffffff;
+  margin: 0px 0px 10px 0px;
+  padding: 0px 20px;
+}
+
