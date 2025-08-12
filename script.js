@@ -1,8 +1,5 @@
 
 
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
 
   const sliderRoot = document.querySelector('.slider-content.slick-slider');
