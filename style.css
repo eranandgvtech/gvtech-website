@@ -741,13 +741,13 @@ nav.right_menu_togle {
 }
 
 @media only screen and (max-width: 991px) {
-    .md-pl-15 {
+    .rs-about .container .row .md-pl-15 {
         padding-left: 15px;
     }
 }
 
 @media only screen and (max-width: 991px) {
-    .md-pl-15 {
+    .rs-about .container .row .md-pl-15 {
         padding-left: 15px;
     }
 }
