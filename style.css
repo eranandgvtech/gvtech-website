@@ -183,6 +183,12 @@ button {
     }
 }
 
+@media only screen and (max-width: 991px) {
+    .topbar-contact {
+        display: none !important;
+    }
+}
+
 .full-width-header .header .topbar-area.style1 .topbar-contact li {
     display: inline-block;
     color: #ffffff;
@@ -302,6 +308,26 @@ button {
     position: relative;
 }
 
+@media only screen and (max-width: 991px) {
+    .header .menu-area .logo-area {
+        position: absolute;
+        z-index: 1;
+        top: 14px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .header .menu-area .logo-area {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: normal;
+        align-items: normal;
+        justify-content: space-between;
+    }
+}
+
 /* :vertical alignment -middle for img in body -> do it first */
 
 .header .menu-area .logo-area img {
@@ -315,6 +341,12 @@ button {
     transition: 0.4s;
     -webkit-transition: 0.4s;
     max-height: 75px;
+}
+
+@media only screen and (max-width: 991px) {
+    .full-width-header .header .menu-area .logo-area img {
+        max-height: 32px;
+    }
 }
 
 .full-width-header .header .menu-area .logo-area a .sticky-logo {
@@ -525,8 +557,8 @@ nav.right_menu_togle {
 }
 
 .rs-banner.main-home {
-    background: url(https://gvtechsolution.com/assets/images/banner/style1/main-banner.png);
-    /* background: url(https://gvtechsolution.com/assets/images/banner/banner4.jpg); */
+    /* background: url(https://gvtechsolution.com/assets/images/banner/style1/main-banner.png); */
+    background: url(https://gvtechsolution.com/assets/images/banner/banner4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -545,6 +577,19 @@ nav.right_menu_togle {
     width: 65%;
 }
 
+@media only screen and (max-width: 991px) {
+    .rs-banner.main-home .content-wrap {
+        padding: 180px 0 128px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .rs-banner.main-home .content-wrap {
+        padding: 230px 0 178px;
+        width: 70%;
+    }
+}
+
 .rs-banner.main-home .content-wrap .border-line {
     background-color: #fff;
     color: #ffffff;
@@ -559,6 +604,21 @@ nav.right_menu_togle {
     font-weight: 700;
     color: #ffffff;
     margin: 0px 0px 47px 0px;
+}
+
+@media only screen and (max-width: 767px) {
+    .rs-banner.main-home .content-wrap .sub-title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .rs-banner.main-home .content-wrap .sub-title {
+        font-size: 18px;
+        line-height: 30px;
+        margin: 0px 0px 40px 0px;
+    }
 }
 
 .rs-banner.main-home a {
