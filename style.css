@@ -623,6 +623,10 @@ nav.right_menu_togle {
 
 .rs-banner.main-home a {
     color: #ffffff;
+    background-color: #bb0b0b;
+    padding:15px 25px 15px 25px;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 
