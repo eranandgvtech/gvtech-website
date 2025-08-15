@@ -11,6 +11,11 @@ body {
   /* background-color: #121212; */
 }
 
+:root {
+  --button-background: #bb0b0b;
+}
+
+
 *, ::after, ::before {
     box-sizing: border-box;
 }
@@ -623,7 +628,7 @@ nav.right_menu_togle {
 
 .rs-banner.main-home a {
     color: #ffffff;
-    background-color: #bb0b0b;
+    background-color: var(--button-background);
     padding:15px 25px 15px 25px;
     font-size: 17px;
     font-weight: bold;
@@ -842,7 +847,7 @@ nav.right_menu_togle {
     padding: 18px 35px 18px 35px;
     border-radius: 0px 0px 0px 0px;
     color: #fff;
-    background: #bb0b0b;
+    background: var(--button-background);
     overflow: hidden;
     position: relative;
 }
@@ -1025,7 +1030,7 @@ nav.right_menu_togle {
     padding: 18px 35px 18px 35px;
     border-radius: 0px 0px 0px 0px;
     color: #fff;
-    background: #bb0b0b;
+    background: var(--button-background);
     overflow: hidden;
     position: relative;
 }
@@ -1547,7 +1552,7 @@ align-items: normal;
     position: relative;
     padding: 18px 35px;
     border-radius: 0px;
-    background: rgb(187, 11, 11);
+    background: var(--button-background);
     overflow: hidden;
 
 }
