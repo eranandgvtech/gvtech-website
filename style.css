@@ -75,6 +75,25 @@ h6 {
   font-weight: 500;
 }
 
+@media only screen and (max-width: 480px) {
+    h2 {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    h2 {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+}
+@media only screen and (max-width: 991px) {
+    h2 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+}
+
 a {
   color: #bb0b0b;
   transition: all 0.3s ease;
@@ -1205,20 +1224,29 @@ align-items: normal;
 
 /* --------------project----------------   */
 
-.project {
-  padding: 100px 100px;
-  background: url("https://www.gvtechsolution.com/assets/images/bg/portfolio-bg.png") no-repeat center center;
-  background-size: cover;
-  box-sizing: border-box;
-  position: relative;
-  display: block;
+.pt-100{
+    padding-top: 100px;
+}
+
+.pb-100{
+    padding-bottom: 100px;
 }
 
 @media only screen and (max-width: 991px) {
-    .project {
+    .md-pb-70 {
         padding-bottom: 70px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .md-pt-70 {
         padding-top: 70px;
     }
+}
+
+.project {
+  background: url("https://www.gvtechsolution.com/assets/images/bg/portfolio-bg.png") no-repeat;
+  background-position: top center;
+  background-size: cover;
 }
 
 .project .container{
@@ -1233,30 +1261,38 @@ align-items: normal;
 }
 
 @media (min-width: 576px) {
-    .container {
+    .project .container{
         max-width: 540px;
-        display: block;
     }
 }
 
 @media (min-width: 768px) {
-    .container {
+    .project .container {
         max-width: 720px;
     }
 }
 
 @media (min-width: 992px) {
-    .container {
+    .project .container{
         max-width: 960px;
     }
 }
 
-.project .container .title {
-  text-align: center !important;
+.project .container .mb-60 {
   margin-bottom: 60px;
 }
 
-.project .container .title .titleh2 {
+.project .container .text-center {
+  text-align: center !important;
+}
+
+@media only screen and (max-width: 991px) {
+    .project .container .md-mb-40 {
+        margin-bottom: 40px;
+    }
+}
+
+.project .container .sec-title .titleh2 {
   font-size: 36px;
     line-height: 46px;
     font-weight: 700;
@@ -1266,7 +1302,14 @@ align-items: normal;
     padding-top: 28px;
 }
 
-.project .container .title .titleh2::after {
+@media only screen and (max-width: 767px) {
+     .project .container .sec-title .titleh2 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+}
+
+.project .container .sec-title .titleh2::after {
   content: '';
     position: absolute;
     border: 0;
@@ -1321,7 +1364,6 @@ align-items: normal;
 .project .container .grid .grid-item {
   
   margin-bottom: 30px;
-  /* padding: 0 calc(var(--bs-gutter-x) * .5); */
   
 }
 
@@ -1332,7 +1374,7 @@ align-items: normal;
     height: 225px;
 }
 
-.project .container .grid .grid-item .project-item .project-img {
+.project .container .grid .grid-item .project-item .project-img img {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
@@ -1340,10 +1382,15 @@ align-items: normal;
   /* transition: transform 0.3s ease; */
 }
 
-.project .container .grid .grid-item .project-item .project-img>img {
+.project .container .grid .grid-item .project-item .project-img img>img {
   object-fit: fill;
   height: 100%;
-  
+}
+
+@media only screen and (max-width: 767px) {
+    .project .container .grid .grid-item .project-item .project-img img{
+        width: 100%;
+    }
 }
 
 /* .project .container .grid .grid-item .project-item:hover .project-img {
@@ -1404,8 +1451,14 @@ align-items: normal;
     font-weight: 700;
     margin-bottom: 20px;
     text-align: left;
-    
   }
+
+  @media only screen and (max-width: 767px) {
+    .project .container .grid .grid-item .project-item .project-content .project-inner .title{
+        font-size: 18px;
+        line-height: 1.1;
+    }
+}
 
 .project .container .grid .grid-item .project-item .project-content .project-inner .title a{
        color: rgb(255, 255, 255);
