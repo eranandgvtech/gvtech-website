@@ -1537,14 +1537,22 @@ align-items: normal;
 /* --------------team----------------  */
 
 .teams {
-  background: url("https://www.gvtechsolution.com/assets/images/bg/team-bg.jpg") no-repeat center center;
+  background: url("https://www.gvtechsolution.com/assets/images/bg/team-bg.jpg") no-repeat top center;
   background-size: cover;
-  box-sizing: border-box;
+  /* box-sizing: border-box;
   position: relative;
-  display: block;
+  display: block; */
   padding-bottom: 100px;
   padding-top: 100px;
 }
+
+@media only screen and (max-width: 991px) {
+    .teams {
+        padding-bottom: 70px;
+        padding-top: 70px;
+    }
+}
+
 
 .teams .container{
   width: 100%;
@@ -1573,6 +1581,12 @@ align-items: normal;
 @media (min-width: 992px) {
     .teams.container {
         max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .teams.container {
+        max-width: 1140px;
     }
 }
 
@@ -1617,6 +1631,12 @@ align-items: normal;
     margin-bottom: 50px;
 }
 
+@media only screen and (max-width: 991px) {
+    .teams .container .row .heading .sec-title {
+        margin-bottom: 35px;
+    }
+}
+
 
 
 .teams .container .row .heading .sec-title .title {
@@ -1627,6 +1647,13 @@ align-items: normal;
     position: relative;
     padding-top: 28px;
     margin: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+    .teams .container .row .heading .sec-title .title {
+        font-size: 26px;
+        line-height: 36px;
+    }
 }
 
 .teams .container .row .heading .sec-title .title::after {
@@ -1656,8 +1683,20 @@ align-items: normal;
   text-align: right;
 }
 
+@media only screen and (max-width: 991px) {
+    .teams .container .row .mainbtn {
+        text-align: left !important;
+    }
+}
+
 .teams .container .row .mainbtn .btn{
   margin-bottom: 90px;
+}
+
+@media only screen and (max-width: 991px) {
+    .teams .container .row .mainbtn .btn{
+        margin-bottom: 50px;
+    }
 }
 
 .teams .container .row .mainbtn .btn .readon {
@@ -1670,29 +1709,34 @@ align-items: normal;
     display: inline-block;
     position: relative;
     z-index: 1;
-    background-color: transparent;
     transition: 0.4s;
 
 }
-.teams .container .row .mainbtn .btn .consultant {
+.teams .container .row .mainbtn .btn .readon .consultant{
     color: rgb(255, 255, 255);
-    position: relative;
     padding: 18px 35px;
     border-radius: 0px;
     background: var(--button-background);
     overflow: hidden;
-
-}
-
-.teams .container .row .mainbtn .btn .discover {
-        padding: 15px 40px;
+    position: relative;
 
 }
 
 @media only screen and (max-width: 991px) {
-    .readon {
+    .teams .container .row .mainbtn .btn .readon .consultant {
         padding: 16px 28px 16px 28px;
         font-size: 15px;
+    }
+}
+
+.teams .container .row .mainbtn .btn .readon .consultant .discover {
+        padding: 15px 40px;
+
+}
+
+@media only screen and (max-width: 480px) {
+    .teams .container .row .mainbtn .btn .readon.consultant, .readon.consultant.discover {
+        padding: 15px 26px 15px 26px;
     }
 }
 
@@ -1712,25 +1756,6 @@ align-items: normal;
     transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
 
 }
-
-.teams .container .row .mainbtn .btn .readon:hover{
-  background-color: #ffffff;
-  color: #bb0b0b;
-  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.75);
-}
-
-.teams .container .row .mainbtn .btn .readon:active {
-  transform: scale(0.95);
-}
-.teams .container .row .mainbtn .btn .readon:focus {
-  outline: none;
-  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.75);
-}
-.teams .container .row .mainbtn .btn .readon:focus-visible {
-  outline: 2px solid #bb0b0b;  
-  outline-offset: 2px;
-}
-  
 
 /* ------------choose us---------- */
 
@@ -1765,9 +1790,17 @@ align-items: normal;
 
 @media (min-width: 992px) {
     .choose .container {
-        max-width: 1200px;
+        max-width: 960px;
     }
 }
+
+@media (min-width: 1200px) {
+    .choose .container {
+        max-width: 1140px;
+    }
+}
+
+
 
 .choose .container .row {
     --bs-gutter-x: 1.5rem;
@@ -1928,7 +1961,13 @@ align-items: normal;
 
 @media (min-width: 992px) {
     .choose .choose-services .container {
-        max-width: 1200px;
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .choose .choose-services .container {
+        max-width: 1140px;
     }
 }
 
