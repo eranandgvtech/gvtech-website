@@ -5,6 +5,7 @@
         const mobileMenuBtn = document.querySelector(".mobile-menu-btn a");
         const mobileNavbarMenu = document.getElementById("mobile-navbar-menu");
         const closeBtn = document.getElementById("nav-close2");
+        const menuLinks = mobileNavbarMenu.querySelectorAll("ul li a");
 
         // Open menu
         mobileMenuBtn.addEventListener("click", function (e) {
@@ -16,6 +17,13 @@
         closeBtn.addEventListener("click", function (e) {
             e.preventDefault();
             mobileNavbarMenu.classList.remove("open");
+        });
+
+        // Close menu when clicking a menu item
+        menuLinks.forEach(link => {
+            link.addEventListener("click", function () {
+                mobileNavbarMenu.classList.remove("open");
+            });
         });
     });
 
