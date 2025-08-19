@@ -22,7 +22,7 @@
         // Close menu when clicking a menu item
         menuLinks.forEach(link => {
             link.addEventListener("click", function () {
-                mobileNavbarMenu.classList.remove("open");
+              mobileNavbarMenu.classList.remove("open");
             });
         });
     });
