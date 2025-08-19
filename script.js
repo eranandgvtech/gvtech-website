@@ -1,4 +1,26 @@
 
+// .... for mobile menu toggle
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuBtn = document.querySelector(".mobile-menu-btn a");
+        const mobileNavbarMenu = document.getElementById("mobile-navbar-menu");
+        const closeBtn = document.getElementById("nav-close2");
+
+        // Open menu
+        mobileMenuBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            mobileNavbarMenu.classList.add("open");
+        });
+
+        // Close menu
+        closeBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            mobileNavbarMenu.classList.remove("open");
+        });
+    });
+
+
+// ..... for sliding effect in testimonials
 
 document.addEventListener("DOMContentLoaded", () => {
 

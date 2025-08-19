@@ -520,6 +520,12 @@ nav.right_menu_togle {
     overflow-y: auto;
 }
 
+/* When mobile menu is open */
+.full-width-header .right_menu_togle.open {
+    right: 0 !important;
+}
+
+
 @media screen and (min-width: 992px) {
     .right_menu_togle.mobile-navbar-menu {
         display: none;
