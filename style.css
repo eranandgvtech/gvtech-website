@@ -199,7 +199,19 @@ input[type="text" i] {
 
 @media (min-width: 992px) {
     .main-content .container {
-        max-width: 1200px;
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-content .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .main-content .container {
+        max-width: 1320px;
     }
 }
 
@@ -432,6 +444,13 @@ input[type="text" i] {
 
 .main-menu {
     position: relative;
+}
+
+
+.full-width-header .header .menu-area .rs-menu-area {
+    display: flex;
+    align-items: center;
+    margin-right: 72px;
 }
 
 .full-width-header .header .menu-area .main-menu {
@@ -702,6 +721,181 @@ nav.right_menu_togle {
 }
 
 
+/* ----------------breadcrumbs--------------- */
+
+.rs-breadcrumbs {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.rs-breadcrumbs.img7 {
+    background: url(https://gvtechsolution.com/assets/images/breadcrumbs/inr_7.jpg);
+}
+
+.rs-breadcrumbs .breadcrumbs-inner {
+    padding: 310px 0 180px;
+}
+
+.rs-breadcrumbs .breadcrumbs-inner .page-title {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+    padding-top: 20px;
+}
+
+.rs-breadcrumbs .breadcrumbs-inner .page-title .watermark {
+    position: absolute;
+    font-size: 200px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: poppins, sans-serif;
+    opacity: 0.05;
+    width: 100%;
+    left: 0;
+    color: inherit;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.rs-breadcrumbs .breadcrumbs-inner .page-title:after {
+    content: '';
+    height: 5px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: -1;
+    background: #bb0b0b;
+    width: 65px;
+    margin: 0 auto;
+}
+
+.sub-text {
+    font-weight: 600;
+    margin: 0 0 10px;
+    display: inline-block;
+    color: #bb0b0b;
+    line-height: 28px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.rs-breadcrumbs .breadcrumbs-inner .sub-text {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: capitalize;
+    display: inline-block;
+    margin-top: 10px;
+    padding-right: 290px;
+}
+
+
+.main-content .pb-100{
+    padding-bottom: 100px;
+}
+
+.rs-contact .margin-0 {
+    margin: 0;
+}
+
+.rs-contact.main-home.office-modify1 .contact-map iframe {
+    height: 761px;
+}
+
+.rs-contact.main-home.office-modify1 .contact-section {
+    background-color: #ebebeb;
+    padding: 100px 80px 121px;
+}
+
+@media screen and (min-width: 992px) {
+    .rs-contact.main-home.office-modify1 .contact-section {
+        min-height: 761px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .rs-contact.main-home.office-modify1 .contact-section {
+        padding: 70px 40px 121px;
+    }
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.rs-contact.main-home.office-modify1 .contact-section .contact-wrap .from-control {
+    color: #000000;
+    border-style: solid;
+    border-color: #ffffff;
+    background-color: #fff;
+}
+
+.mb-30 {
+    margin-bottom: 30px; /* gap between inputs */
+}
+
+.mb-35 {
+    margin-bottom: 35px; /* gap between textarea and button */
+}
+
+.rs-contact.main-home.office-modify1 .office-buliding {
+    background: url(https://gvtechsolution.com/assets/images/contact/office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rs-contact.main-home.office-modify1 .contact-content {
+    padding-top: 100px;
+}
+
+.rs-contact.main-home.office-modify1 .contact-box {
+    padding: 35px 35px 35px 35px;
+    background-color: #ebebeb;
+    margin: 0 -4px 0 0;
+    height: 100%;
+}
+
+.rs-contact.main-home.office-modify1 .contact-box .contact-icon img {
+    width: 64px;
+    height: 64px;
+    max-width: unset;
+    margin-bottom: 20px;
+}
+
+.rs-contact.main-home.office-modify1 .contact-box .content-text .title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 38px;
+    margin: 0 0 10px;
+}
+
+.rs-contact.main-home.office-modify1 .contact-box .content-text a {
+    color: #444444;
+    font-weight: 500;
+}
+
+.rs-contact.main-home.office-modify1 .contact-box .content-text .title a {
+    color: #14171c;
+}
+
+.rs-contact.main-home.office-modify1 .contact-box .content-text .services-txt {
+    margin: 0;
+    color: #444444;
+    font-weight: 500;
+}
+
+
+
+
+
 /* -----------about---------------- */
 
 .pt-110 {
@@ -759,7 +953,13 @@ nav.right_menu_togle {
 
 @media (min-width: 1200px) {
     .rs-about .container {
-        max-width: 1240px;
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .rs-about .container {
+        max-width: 1320px;
     }
 }
 
@@ -1002,6 +1202,12 @@ nav.right_menu_togle {
 @media (min-width: 1200px) {
     .services .container {
         max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .services .container {
+        max-width: 1320px;
     }
 }
 
@@ -1332,6 +1538,12 @@ align-items: normal;
     }
 }
 
+@media (min-width: 1400px) {
+    .project .container {
+        max-width: 1320px;
+    }
+}
+
 .project .container .mb-60 {
   margin-bottom: 60px;
 }
@@ -1634,6 +1846,12 @@ align-items: normal;
     }
 }
 
+@media (min-width: 1400px) {
+    .teams .container {
+        max-width: 1320px;
+    }
+}
+
 .teams .container .row{
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
@@ -1844,7 +2062,11 @@ align-items: normal;
     }
 }
 
-
+@media (min-width: 1400px) {
+    .choose .container {
+        max-width: 1320px;
+    }
+}
 
 .choose .container .row {
     --bs-gutter-x: 1.5rem;
@@ -2112,8 +2334,8 @@ align-items: normal;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    padding-bottom: 90px;
-    padding-top: 90px;
+    padding-bottom: 100px;
+    padding-top: 100px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -2152,6 +2374,12 @@ align-items: normal;
 @media (min-width: 1200px) {
     .testimonial .container {
         max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .testimonial .container{
+        max-width:1320px
     }
 }
 
@@ -2469,6 +2697,12 @@ align-items: normal;
 @media (min-width: 1200px) {
     .rs-contact .container {
         max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .rs-contact .container{
+        max-width:1320px
     }
 }
 
@@ -2837,6 +3071,12 @@ align-items: normal;
   }
 }
 
+@media (min-width: 1400px) {
+    .footer .footer-top .container {
+        max-width: 1320px;
+    }
+}
+
 
 
 
@@ -3137,6 +3377,12 @@ footer .footer-top .container .row .d-flex .flex-column .address-widget .desc a:
 @media (min-width: 1200px) {
     .footer .footer-bottom .container {
         max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .footer .footer-bottom .container {
+        max-width: 1320px;
     }
 }
 
